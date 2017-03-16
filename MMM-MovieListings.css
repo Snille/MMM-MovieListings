@@ -1,3 +1,7 @@
+.MMM-MovieListings .image {
+  border-radius: 15px;
+}
+
 .MMM-MovieListings .top {
   vertical-align: top;
 }

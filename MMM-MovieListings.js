@@ -79,12 +79,11 @@ Module.register('MMM-MovieListings', {
 			var loadingPlaceholder = document.createElement('div');
 			loadingPlaceholder.className = 'small dimmed';
 			loadingPlaceholder.innerHTML = this.translate('LOADING');
-
 			wrapper.appendChild(loadingPlaceholder);
 			return wrapper;
 		}
 
-		switch (this.config.interface) {
+		switch (this.config.interFace) {
 		case 'list':
 		case 'multiposter':
 			var tableContainer = document.createElement('div').appendChild(this.createTableView(this.moviesToDisplay));
@@ -267,7 +266,7 @@ Module.register('MMM-MovieListings', {
 	* HELPER
 	*/
 	prepareDomUpdate: function(movies) {
-		switch (this.config.interface) {
+		switch (this.config.interFace) {
 		case 'list':
 			// If pagination enabled, turn to DOM update scheduler, else just display all movies
 			if (this.config.moviesPerPage > 0) {
