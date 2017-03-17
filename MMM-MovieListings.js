@@ -216,11 +216,17 @@ Module.register('MMM-MovieListings', {
 			var genreContent = document.createElement('span');
 			genreContent.className = 'xsmall genre';
 			var genres = '';
+			var num = 0;
 			for (var i = 0; i <= movie.genres.length -1; i++) {
 				genres += movie.genres[i].name;
 				if (i < movie.genres.length - 1) {
 					genres += ', ';
 				}
+				if (num >= 1) {
+					genres += '<br />';
+					num = 0;
+				}
+				num++;
 			}
 			genreContent.innerHTML = genres;
 			genreContainer.appendChild(genreHeader);
