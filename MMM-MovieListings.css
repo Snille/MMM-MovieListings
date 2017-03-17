@@ -16,8 +16,10 @@
 
 .MMM-MovieListings .marginRight {
   padding-right: 5px;
+  margin-top: 0px;
 }
 
 .MMM-MovieListings .marginLeft {
   padding-left: 5px;
+  margin-top: 0px;
 }
